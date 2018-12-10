@@ -10,14 +10,16 @@
 
     <title> النهج القويم </title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/iziToast.min.css" rel="stylesheet">
+    <link href="css/iziModal.min.css" rel="stylesheet">
     <!-- Custom styles for this site -->
     <link href="css/master.css" rel="stylesheet">
-
     <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Cairo|Lateef" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Lateef" rel="stylesheet">
+
+
   </head>
   <body>
 
@@ -42,20 +44,21 @@
   </nav>
 </header>
 
+
 <main role="main" class="section">
 
   <h3 class="section-title text-center p-3"> تسجيل الدخول </h3>
-  <div class="login">
-      <form class="" action="index.html" method="post">
+  <div class="login "  >
+      <form  class="" action="#" method="post" onsubmit="return login_v()">
         <div class="forms-inputs">
           <p> اسم المستخدم </p>
-          <input  type="text" name="" value="" placeholder=" اسم المستخدم ">
+          <input  type="text" name="username" value="" placeholder=" اسم المستخدم ">
         </div>
         <div class="forms-inputs">
           <p> كلمه المرور </p>
-          <input type="password" name="" value="" placeholder=" كلمه المرور ">
+          <input type="password" name="password" value="" placeholder=" كلمه المرور ">
         </div>
-        <input type="submit" name="submit" value=" دخول "  class="btn btn-h mt-2">
+        <input type="submit" name="submit" value=" دخول "  class="btn btn-h mt-2 trigger">
       </form>
 
   </div>
@@ -67,6 +70,11 @@
 ================================================== -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/iziToast.min.js"></script>
+<script src="js/iziModal.min.js"></script>
+<script src="js/validation.js"></script>
+
+
 </body>
 
 </html>

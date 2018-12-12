@@ -1,7 +1,7 @@
 /********************resetSeting********************/
 
 iziToast.settings({
-    timeout: 60000,
+    timeout: 40000,
     layout: 2,
     rtl: true,
     backgroundColor: 'rgb(233,51,53,0.8)',
@@ -32,12 +32,12 @@ function login_v() {
         });
       }
       // check password
-      if (password.length < 8) {
+      if (password.length < 6) {
         noti       // Login Validation
 = noti + 1;
         iziToast.show({
           title: ' خطأ ',
-          message: ' كلمه المرور يجب ان لا تقل عن 8 احرف '
+          message: ' كلمه المرور يجب ان لا تقل عن 6 أحرف '
           });
       }
       if (noti > 0) {

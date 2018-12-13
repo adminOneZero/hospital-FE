@@ -1,9 +1,16 @@
 rgb(17,79,43,0.2);  gg
 rgb(22,160,133);   g
 rgb(46,204,113,0.5);   f
+#145d33            gg
 #27ae60            g
 #2ecc71            f
 ///////////
 red
 ////////
 rgb(233,51,53,0.2);
+min-height: calc(100vh - 56px);
+
+
+<i class="fas fa-user-md"></i>
+<i class="fas fa-user-injured"></i>
+<i class="fas fa-user-edit"></i>

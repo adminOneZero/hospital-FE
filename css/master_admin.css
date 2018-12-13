@@ -11,8 +11,11 @@
 html{
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
+
 }
 body{
+  /*overflow: scroll;*/
   font-size: 0.900em;
   margin: 0;
   padding: 0;
@@ -84,29 +87,53 @@ h1,h2,h3{
   padding: 5px 20px 5px 20px !important;
   text-align: center;
 }
+
 .nav-link:hover{
   background-color: rgb(0,0,0,0.3);
-  transform: rotate(-0.01turn);
-  transition: 0.5s;
+  /*transform: rotate(0.001turn);*/
+  transform: scale(0.9);
+  transition: 0.5s ;
 }
+
 .nav-link:not(:hover){
   transition: 0.5s;
 }
 
+
+
 /*********************slide*****************/
 
-.slide{
-  background-color: rgb(46,204,113,0.5);
-  height: 100vh;
-  width: 340px;
-  position: fixed;
-  right: 0px;
-}
+
 
 .toggled , .navbar-nav{
-  transition: 2s;
+  /*transition: 2s;*/
 }
 
 .navbar-nav{
-  font-size: 1.30em !important;
+  /*font-size: 1.30em !important;*/
+}
+
+.side {
+  /*position: relative;
+  box-sizing: content-box;
+  float: right;*/
+}
+
+.sidebar li a{
+  /*position: relative !important;*/
+  /*right: 0;*/
+
+  /*text-align: right !important;*/
+  /*vertical-align: */
+  /*width: 100%;*/
+}
+
+#content-wrapper{
+  /*float: left !important;*/
+}
+
+.mini-bord{
+  /*position: absolute;*/
+  /*left: 0 !important;*/
+  /*background-color: #ccc !important;*/
 }

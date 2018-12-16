@@ -180,6 +180,7 @@ table , .table-bg{
 body.fixed-nav #content-wrapper {
   margin-top: 56px;
   padding-left: 90px;
+  z-index: 1 !important;
 }
 
 body.fixed-nav.sidebar-toggled #content-wrapper {
@@ -205,7 +206,7 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
   padding: 0;
   font-size: 1.50em !important;
   transition: 2s;
-
+  z-index: 2;
 }
 
 .sidebar .nav-item:last-child {
@@ -342,8 +343,11 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
 
 }
 /**********************footer*********************/
-
+footer{
+  z-index: 0 !important;
+}
 footer.sticky-footer {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,38 +386,14 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .dropdown-menu{
   overflow: hidden;
 }
-
 
 .dropdown-item{
   color: #fff ;
   padding: 5px 20px 5px 20px;
 }
-
-
 
 .dropdown-header{
   color: #fff;
@@ -467,6 +447,7 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 .dr_table {
+  float: none;
   margin-top: 10px;
   box-sizing: content-box;
   width: 100%;
@@ -503,13 +484,52 @@ body.sidebar-toggled footer.sticky-footer {
 
 
 /***********************breadcrumb***********************/
-.breadcrumb{
-  /*text-align: left !important;*/
-}
+
 .breadcrumb-item{
   color: #fff !important;
 }
 .breadcrumb-item a{
   color: #fff !important;
   text-decoration: none;
+}
+
+
+
+/***********************info page***********************/
+.info_table {
+  margin-top: 10px;
+  box-sizing: content-box;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  box-shadow: 3px 10px 10px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.info_table th:first-child{
+  /*width: 90px !important;*/
+  /*background-color: #fff;*/
+}
+.info_table thead{
+  background-color: rgba(0,0,0,0.4);
+}
+
+.info_table td , .info_table th{
+  padding: 15px;
+}
+
+.info_table tbody tr:hover{
+  /*transform: scale(1.03);*/
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.info_table tr a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.info_table tr a:hover{
+  transform: rotate(3turn);
+  transition: -2s;
 }

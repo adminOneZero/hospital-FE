@@ -1,13 +1,41 @@
 /**********************Global*********************/
+@font-face {
+  font-family: cairo;
+  src: url(../fonts/Cairo-Light.ttf);
+}
+@font-face {
+  font-family: cairo-t;
+  src: url(../fonts/Cairo-Black.ttf);
+}
 
 html {
   position: relative;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
 body {
   height: 100%;
   background-image: url(../img/img1.jpg);
+  font-size: 0.900em;
+  margin: 0;
+  padding: 0;
+  /*font-family: 'cairo', sans-serif;*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+h1,h2,h3{
+  font-family: 'cairo-t', cursive;
+}
+
+.cont{
+  margin: 0px 2% 0px 2%;
 }
 
 .smaller {
@@ -16,6 +44,8 @@ body {
 
 *{
   transition: 1s;
+  font-family: cairo;
+
 }
 :root {
   --input-padding-x: 0.75rem;

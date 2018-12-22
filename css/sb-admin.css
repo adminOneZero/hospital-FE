@@ -29,6 +29,11 @@ body {
   background-attachment: fixed;
 }
 
+.move-rotate:hover{
+  transition: -2s;
+  transform: rotate(3);
+}
+
 
 h1,h2,h3{
   font-family: 'cairo-t', cursive;

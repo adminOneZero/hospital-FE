@@ -27,7 +27,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link href="css/master_admin.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/master_admin.css">
   </head>
 
   <body id="page-top" >
@@ -134,7 +134,7 @@
             <li class="breadcrumb-item">
               <a href="#"> لوحه التحكم </a>
             </li>
-            <li class="breadcrumb-item active"> العيادات والجهات </li>
+            <li class="breadcrumb-item active"> الاطباء </li>
           </ol>
 
 <div class="section">
@@ -147,21 +147,33 @@
                   <input type="text" class=""  placeholder=" ابحث من هنا ">
               </div>
                   <button type="submit" class="btn btn-w "><i class="fas fa-search move-h" style="transform: rotate(3) !important;"></i></button>
-                  <button data-modal="clinics" type="button" name="button" class="btn btn-w  trigger mr-4"><i class="fas fa-plus-circle move-h" style="transform: rotate(3) !important;"></i></button>
+                  <button data-modal="doctors" type="button" name="button" class="btn btn-w  trigger mr-4" ><i class="fas fa-plus-circle move-h" style="transform: rotate(3) !important;"></i></button>
               </form>
           </span>
       </div>
 
-<div class="mod" data-page-name="doctors" id="page" dir="rtl">
+<div class="mod" data-page-name="doctors" id="page"  dir="rtl">
   <div class="add_items">
     <form class="" action="index.html" method="post" class="text-right">
-      <p> <span> رقم الجهه/العياده </span>  <input type="text" name="" value=""> </p>
-      <p> <span> اسم الجهه/العياده بالعربي </span>  <input type="text" name="" value=""> </p>
-      <p> <span> اسم الجهه/العياده بالانجليزيه </span>  <input type="text" name="" value=""> </p>
+      <p> <span> رقم الطبيب </span>  <input type="text" name="" value="" placeholder="  رقم الطبيب " style="width:140px;">
+          <span style="float:none;margin-right:10px;"> مبلغ استشارته </span> <input type="text" name="" value="" placeholder="   مبلغ استشارته " style="width:140px;"> </p>
+      <p> <span> اسم الطبيب بالعربيه </span>  <input type="text" name="" value="" placeholder=" اسم الطبيب بالعربيه "> </p>
+      <p> <span>  اسم الطبيب بالانجليزيه </span>  <input type="text" name="" value="" placeholder=" اسم الطبيب بالانجليزيه "> </p>
+      <p> <span>  تخصص الطبيب </span>  <input type="text" name="" value="" placeholder=" تخصص الطبيب  "> </p>
+      <p> <span>  العيادة </span>
+
+        <select class="selection" style="width: 250px;border: 0;;" name="clinics">
+          <option value=""> اسنان </option>
+          <option value=""> باطنيه </option>
+        </select>
+       </p>
       <input class="btn btn-f" type="submit" name="save" value=" حفظ ">
     </form>
   </div>
+
+
 </div>
+
 
 </div>
 
@@ -173,43 +185,47 @@
         <thead>
           <tr>
             <th>#</th>
-            <th> رقم الجهه / العياده </th>
-            <th> اسم الجهه / العياده : بالعربي </th>
-            <th> اسم الجهه / العياده : بالنجليزي </th>
-            <th> حذف </th>
+            <th>  اسم الطبيب بالعربيه </th>
+            <th>  اسم الطبيب بالانجليزيه  </th>
+            <th> تخصص الطبيب </th>
+            <th>  العيادة  </th>
+            <th>  رقم الطبيب  </th>
+            <th> مبلغ استشارته  </th>
             <th> تعديل </th>
+            <th> حذف </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td> 6546 </td>
+            <td> محمد </td>
+            <td> mohamed </a></td>
             <td> اسنان </td>
-            <td> teeth </a></td>
+            <td> اسنان </td>
+            <td> 7678 </td>
+            <td> 1000 </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
           <tr>
             <td>2</td>
-            <td>297</td>
-            <td> صيدليه </td>
-            <td>Pharmacy</td>
+            <td> محمد </td>
+            <td> mohamed </a></td>
+            <td> اسنان </td>
+            <td> اسنان </td>
+            <td> 7678 </td>
+            <td> 1000 </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
           <tr>
             <td>3</td>
-            <td> 6546 </td>
+            <td> محمد </td>
+            <td> mohamed </a></td>
             <td> اسنان </td>
-            <td> teeth </a></td>
-            <td><a href="#"class="far fa-edit move-rotate"></a></td>
-            <td><a href="#"class="fas fa-trash move-rotate"></a></td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>297</td>
-            <td> صيدليه </td>
-            <td>Pharmacy</td>
+            <td> اسنان </td>
+            <td> 7678 </td>
+            <td> 1000 </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
@@ -289,6 +305,18 @@
     <script src="js/iziToast.min.js"></script>
     <script src="js/iziModal.min.js"></script>
     <script src="js/master.js"></script>
+
+    <!-- <script type="text/javascript">
+    $("#modal").iziModal({
+      title: ' اضافه طبيب ',
+      subtitle: ' اضافه اطباء جدد ',
+      transitionOutOverlay: 'fadeOut',
+      background: '#34495e',
+      loop: false,
+      radius: 3,
+      borderBottom: true,
+    });
+    </script> -->
   </body>
 
 </html>

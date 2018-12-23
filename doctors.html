@@ -20,6 +20,7 @@
     <!-- IZI -->
     <link href="css/iziModal.min.css" rel="stylesheet" type="text/css">
     <link href="css/iziToast.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
 
     <!-- Page level plugin CSS-->
     <link href="css/dataTables.bootstrap4.css" rel="stylesheet">
@@ -144,7 +145,7 @@
               <form class="form-inline ">
               <div class="form-group mx-2">
                   <label for="inputPassword2" class="sr-only">Searh</label>
-                  <input type="text" class=""  placeholder=" ابحث من هنا ">
+                  <input title="Search box" type="text" class="tips"  placeholder=" ابحث من هنا ">
               </div>
                   <button type="submit" class="btn btn-w "><i class="fas fa-search move-h" style="transform: rotate(3) !important;"></i></button>
                   <button data-modal="doctors" type="button" name="button" class="btn btn-w  trigger mr-4" ><i class="fas fa-plus-circle move-h" style="transform: rotate(3) !important;"></i></button>
@@ -155,7 +156,7 @@
 <div class="mod" data-page-name="doctors" id="page"  dir="rtl">
   <div class="add_items">
     <form class="" action="index.html" method="post" class="text-right">
-      <p> <span> رقم الطبيب </span>  <input type="text" name="" value="" placeholder="  رقم الطبيب " style="width:140px;">
+      <p> <span> رقم الطبيب </span>  <input title="doctor ID" type="text" name="" value="" placeholder="  رقم الطبيب " style="width:140px;">
           <span style="float:none;margin-right:10px;"> مبلغ استشارته </span> <input type="text" name="" value="" placeholder="   مبلغ استشارته " style="width:140px;"> </p>
       <p> <span> اسم الطبيب بالعربيه </span>  <input type="text" name="" value="" placeholder=" اسم الطبيب بالعربيه "> </p>
       <p> <span>  اسم الطبيب بالانجليزيه </span>  <input type="text" name="" value="" placeholder=" اسم الطبيب بالانجليزيه "> </p>
@@ -167,7 +168,7 @@
           <option value=""> باطنيه </option>
         </select>
        </p>
-      <input class="btn btn-f" type="submit" name="save" value=" حفظ ">
+      <input title="save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
     </form>
   </div>
 
@@ -304,19 +305,9 @@
     <script src="js/datatables-demo.js"></script>
     <script src="js/iziToast.min.js"></script>
     <script src="js/iziModal.min.js"></script>
+    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
     <script src="js/master.js"></script>
 
-    <!-- <script type="text/javascript">
-    $("#modal").iziModal({
-      title: ' اضافه طبيب ',
-      subtitle: ' اضافه اطباء جدد ',
-      transitionOutOverlay: 'fadeOut',
-      background: '#34495e',
-      loop: false,
-      radius: 3,
-      borderBottom: true,
-    });
-    </script> -->
   </body>
 
 </html>

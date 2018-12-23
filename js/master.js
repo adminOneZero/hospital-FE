@@ -43,7 +43,10 @@ $(document).on('click', '.trigger', function (event) {
   }
 });
 
-
+$('.tips').tooltipster({
+  animation: 'fade',
+  delay: 200,
+});
 
 
 

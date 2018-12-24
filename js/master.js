@@ -40,6 +40,20 @@ if ($('.mod').attr('data-page-name') == 'medicine_service') {
     borderBottom: true,
   });
 }
+if ($('.mod').attr('data-page-name') == 'rooms') {
+  $("#page").iziModal({
+    title: ' الغرف ',
+    subtitle: ' تصنيف الغرف ',
+    headerColor: 'rgb(0,0,10,0.7)',
+    background: 'rgb(30,50,70,0.8)',
+    transitionOutOverlay: 'fadeOut',
+    background: '#34495e',
+    loop: false,
+    radius: 3,
+    borderBottom: true,
+  });
+}
+
 
 $(document).on('click', '.trigger', function (event) {
   event.preventDefault();

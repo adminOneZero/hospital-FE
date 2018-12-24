@@ -27,10 +27,22 @@ if ($('.mod').attr('data-page-name') == 'clinics') {
   });
 }
 
+if ($('.mod').attr('data-page-name') == 'medicine_service') {
+  $("#page").iziModal({
+    title: ' الخدمات الطبيه ',
+    subtitle: ' اضافه خدمه جديده ',
+    headerColor: 'rgb(0,0,10,0.7)',
+    background: 'rgb(30,50,70,0.8)',
+    transitionOutOverlay: 'fadeOut',
+    background: '#34495e',
+    loop: false,
+    radius: 3,
+    borderBottom: true,
+  });
+}
 
 $(document).on('click', '.trigger', function (event) {
   event.preventDefault();
-
   if (this.dataset.modal == 'doctors') {
 
     $('.mod').iziModal('open');
@@ -41,8 +53,15 @@ $(document).on('click', '.trigger', function (event) {
     $('.mod').iziModal('open');
 
   }
+  if (this.dataset.modal == 'medicine_service') {
+
+    $('.mod').iziModal('open');
+
+  }
+
 });
 
+// tooltipster Object
 $('.tips').tooltipster({
   animation: 'fade',
   delay: 200,

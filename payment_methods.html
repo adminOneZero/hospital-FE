@@ -137,7 +137,7 @@
             <li class="breadcrumb-item">
               <a href="#"> لوحه التحكم </a>
             </li>
-            <li class="breadcrumb-item active"> تصنيف الغرف </li>
+            <li class="breadcrumb-item active"> طرق الدفع </li>
           </ol>
 
 <div class="section">
@@ -155,22 +155,23 @@
           </span>
       </div>
 
-<div class="mod" data-page-name="rooms" id="page"  dir="rtl">
+<div class="mod" data-page-name="payment" id="page"  dir="rtl">
   <div class="add_items">
     <form class="" action="#" method="post" class="text-right">
 
-      <p> <span> رقم الغرفه </span>  <input type="text" name="" value="" placeholder=" رقم الغرفه "> </p>
-      <p> <span> سعر الغرفه </span>  <input type="text" name="" value="" placeholder=" سعر الغرفه "> </p>
-      <p> <span> درجه الغرفه </span>
-        <select class="selection" style="width: 250px;border: 0;;" name="clinics">
-          <option value=""> اختر درجه الغرفه </option>
-          <option value=""> اولى </option>
-          <option value=""> ثانيه </option>
-        </select>
+      <p> <span> طرق الدفع </span>
+          <span style="float:none;text-align:left;margin-right:10px;"> نقدي </span> <input type="radio" name="payment" value="monetary" style="float:none;text-align:left;vertical-align: middle;">
+          <span style="float:none;text-align:left;margin-right:10px;"> آجل </span> <input type="radio" name="payment" value="Deferred" style="float:none;text-align:left;vertical-align: middle;">
       </p>
-      <p> <span> وصف الغرفه </span>
-       <textarea name="descreption" rows="4" cols="28" placeholder=" الوصف "></textarea>
+      <p> <span> اسم الشركه بالعربي </span>  <input type="text" name="" value="" placeholder=" اسم الشركه بالعربي "> </p>
+      <p> <span> اسم الشركه بالانجليزي </span>  <input type="text" name="" value="" placeholder=" اسم الشركه بالانجليزي "> </p>
+<div>
+      <p class="">
+          <input type="radio" name="money" value="percentage" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> نسبه مئويه </span>  <input style="width:50px;" type="text" name="percentage" value="" placeholder="100%" title="Percentage"> <small>%</small>
+          <input type="radio" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> رقم ثابت </span>   <input style="width:50px;" type="text" name="static" value="" placeholder="100$" title="static number"> <small>$</small>
       </p>
+</div>
+
       <input title="save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
     </form>
   </div>
@@ -184,15 +185,17 @@
   <div class="row">
     <div class="col-xl-12" >
 
+     اسم الشركه بالعربي
+
 
       <table class="dr_table mb-3 " dir="rtl" >
         <thead>
           <tr>
             <th>#</th>
-            <th>   رقم الغرفه  </th>
-            <th>  سعر الغرفه </th>
-            <th>  درجه الغرفه  </th>
-            <th> وصف الغرفه  </th>
+            <th> اسم الشركه بالعربي </th>
+            <th> اسم الشركه بالانجليزي </th>
+            <th>  طرق الدفع </th>
+            <th> القيمه </th>
             <th> تعديل </th>
             <th> حذف </th>
           </tr>
@@ -200,34 +203,28 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td> 7678 </td>
-            <td> 500 </td>
-            <td> ثالثه </td>
-            <td>
-              the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-             </td>
+            <td> التامين الصحي </td>
+            <td> any </td>
+            <td> نقدي </td>
+            <td> 677 </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
           <tr>
             <td>2</td>
-            <td> 7678 </td>
-            <td> 500 </td>
-            <td> ثالثه </td>
-            <td>
-              the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-             </td>
+            <td> التامين الصحي </td>
+            <td> any </td>
+            <td> اجل </td>
+            <td> 677 </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
           <tr>
             <td>3</td>
-            <td> 7678 </td>
-            <td> 500 </td>
-            <td> ثالثه </td>
-            <td>
-              the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-             </td>
+            <td> التامين الصحي </td>
+            <td> any </td>
+            <td> اجل </td>
+            <td> 677 </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>

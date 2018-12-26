@@ -54,6 +54,20 @@ if ($('.mod').attr('data-page-name') == 'rooms') {
   });
 }
 
+if ($('.mod').attr('data-page-name') == 'payment') {
+  $("#page").iziModal({
+    title: ' طرق الدفع ',
+    subtitle: ' اضف طريقه دفع جديده ',
+    headerColor: 'rgb(0,0,10,0.7)',
+    background: 'rgb(30,50,70,0.8)',
+    transitionOutOverlay: 'fadeOut',
+    background: '#34495e',
+    loop: false,
+    radius: 3,
+    borderBottom: true,
+  });
+}
+
 
 $(document).on('click', '.trigger', function (event) {
   event.preventDefault();
@@ -68,6 +82,11 @@ $(document).on('click', '.trigger', function (event) {
 
   }
   if (this.dataset.modal == 'medicine_service') {
+
+    $('.mod').iziModal('open');
+
+  }
+  if (this.dataset.modal == 'payment') {
 
     $('.mod').iziModal('open');
 

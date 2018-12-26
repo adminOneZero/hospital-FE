@@ -28,7 +28,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link href="css/master_admin.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/master_admin.css">
   </head>
 
   <body id="page-top" >
@@ -116,7 +116,7 @@
             <a class="dropdown-item" href="payment_methods.html"> طرق الدفع </a>
             <div class="dropdown-divider"></div>
             <h6 class="dropdown-header"> الاداره </h6>
-            <a class="dropdown-item" href="404.html"> حسابات المستخدمين </a>
+            <a class="dropdown-item" href="users_accounts.html"> حسابات المستخدمين </a>
             <a class="dropdown-item" href="blank.html"> الاطباء </a>
           </div>
         </li>
@@ -137,7 +137,7 @@
             <li class="breadcrumb-item">
               <a href="#"> لوحه التحكم </a>
             </li>
-            <li class="breadcrumb-item active"> العيادات والجهات </li>
+            <li class="breadcrumb-item active"> تصنيف الغرف </li>
           </ol>
 
 <div class="section">
@@ -147,24 +147,69 @@
               <form class="form-inline ">
               <div class="form-group mx-2">
                   <label for="inputPassword2" class="sr-only">Searh</label>
-                  <input type="text" class=""  placeholder=" ابحث من هنا ">
+                  <input title="Search box" type="text" class="tips"  placeholder=" ابحث من هنا ">
               </div>
                   <button type="submit" class="btn btn-w "><i class="fas fa-search move-h" style="transform: rotate(3) !important;"></i></button>
-                  <button data-modal="clinics" type="button" name="button" class="btn btn-w  trigger mr-4"><i class="fas fa-plus-circle move-h" style="transform: rotate(3) !important;"></i></button>
+                  <button data-modal="doctors" type="button" name="button" class="btn btn-w  trigger mr-4" ><i class="fas fa-plus-circle move-h" style="transform: rotate(3) !important;"></i></button>
               </form>
           </span>
       </div>
 
-<div class="mod" data-page-name="doctors" id="page" dir="rtl">
+<div class="mod" data-page-name="users" id="page"  dir="rtl">
   <div class="add_items">
-    <form class="" action="index.html" method="post" class="text-right">
-      <p> <span> رقم الجهه/العياده </span>  <input type="text" name="" value=""> </p>
-      <p> <span> اسم الجهه/العياده بالعربي </span>  <input type="text" name="" value=""> </p>
-      <p> <span> اسم الجهه/العياده بالانجليزيه </span>  <input type="text" name="" value=""> </p>
-      <input title="Save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
+    <form class="" action="#" method="post" class="text-right" >
+      <p>
+        <span style="position: relative;top: -30px;"> اسم الموظف </span>
+        <hr style="color:#fff;">
+          <span style="float:none;text-align:right;margin-right:10px;"> الاسم الاول </span> <input  type="text" name="" value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;">
+          <span style="float:none;text-align:right;margin-right:10px;"> اسم الاب </span> <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;">
+          <span style="float:none;text-align:right;margin-right:10px;"> اسم الجد </span> <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;">
+          <span style="float:none;text-align:right;margin-right:10px;"> اسم العائله/اللقب </span> <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;">
+      </p >
+      <hr style="color:#fff;"><br>
+
+      <span style="position: relative;top: -30px;"> اسم الموظف بالانجليزيه </span>
+        <input  type="text" name="" value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;"> <span style="float:none;text-align:left;margin: 0px 10px 0px 10px;"> first name </span>
+        <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;"><span style="float:none;text-align:left;margin: 0px 10px 0px 10px;"> middle name </span>
+        <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;"><span style="float:none;text-align:left;margin: 0px 10px 0px 10px;"> last name </span>
+        <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 100px !important;"><span style="float:none;text-align:left;margin: 0px 10px 0px 10px;"> family name </span>
+    </p>
+
+    <hr style="color:#fff;"><br>
+  </p>
+  <span style="position: relative;top: -30px;"> بيانات الدخول </span>
+    <span style="float:none;text-align:right;margin-right:10px;"> اسم المستخدم </span> <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 150px !important;">
+    <span style="float:none;text-align:right;margin-right:10px;"> كلمه مرور المستخدم </span> <input  type="text" name=""  value="12345" style="float:none;text-align:right;vertical-align: middle;width: 150px !important;">
+    <span style="float:none;text-align:right;margin-right:10px;"> الرقم الوظيفي </span> <input  type="text" name=""  value="" style="float:none;text-align:right;vertical-align: middle;width: 150px !important;">
+</p>
+
+<hr style="color:#fff;"><br>
+
+<p>
+  <span style="position: relative;top: -30px;"> نوع الحساب </span>
+    <input type="radio" name="money" value="percentage" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> عيادته طبيب </span>
+    <input type="radio" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> فني اشعه </span>
+    <input type="radio" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> موظف لشعه </span>
+    <input type="radio" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> فني مختبر وبنك دم </span>
+    <input type="radio" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> مدير للنظام </span>
+    <input type="radio" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> الماليه </span>
+    <input type="radio" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> صيدليه </span>
+</p>
+
+<hr style="color:#fff;"><br>
+<span style="position: relative;top: -30px;"> الصلاحيات </span>
+  <input type="checkbox" name="money" value="percentage" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> الاضاف </span>
+  <input type="checkbox" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> التعديل </span>
+  <input type="checkbox" name="money" value="static" style="float:none;text-align:right;vertical-align: middle;margin: 0px 10px 0px 5px;"> <span style="float:none;text-align:right;"> الحذف </span>
+</p>
+
+      <input title="save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
     </form>
   </div>
+
+
 </div>
+
 
 </div>
 
@@ -176,54 +221,50 @@
         <thead>
           <tr>
             <th>#</th>
-            <th> رقم الجهه / العياده </th>
-            <th> اسم الجهه / العياده : بالعربي </th>
-            <th> اسم الجهه / العياده : بالنجليزي </th>
-            <th> حذف </th>
+            <th> اسم الموظف  </th>
+            <th> اسم الموظف بالانجليزي </th>
+            <th> اسم المستخدم </th>
+            <th> الرقم الوظيفي </th>
+            <th> نوع الحساب </th>
+            <th> الصلاحيات </th>
             <th> تعديل </th>
+            <th> حذف </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td> 6546 </td>
-            <td> اسنان </td>
-            <td> teeth </a></td>
+            <td> محمد احمد </td>
+            <td> Mohamed ahmed </td>
+            <td> 5767578979734 </td>
+            <td> عياده طبيه </td>
+            <td> حذف - تعديل - اضافه </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>297</td>
-            <td> صيدليه </td>
-            <td>Pharmacy</td>
+            <td>1</td>
+            <td> محمد احمد </td>
+            <td> Mohamed ahmed </td>
+            <td> 5767578979734 </td>
+            <td> عياده طبيه </td>
+            <td> حذف - تعديل - اضافه </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
           <tr>
-            <td>3</td>
-            <td> 6546 </td>
-            <td> اسنان </td>
-            <td> teeth </a></td>
+            <td>1</td>
+            <td> محمد احمد </td>
+            <td> Mohamed ahmed </td>
+            <td> 5767578979734 </td>
+            <td> عياده طبيه </td>
+            <td> حذف - تعديل - اضافه </td>
             <td><a href="#"class="far fa-edit move-rotate"></a></td>
             <td><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
-          <tr>
-            <td>4</td>
-            <td>297</td>
-            <td> صيدليه </td>
-            <td>Pharmacy</td>
-            <td><a href="#"class="far fa-edit move-rotate"></a></td>
-            <td><a href="#"class="fas fa-trash move-rotate"></a></td>
-          </tr>
+
         </tbody>
       </table>
-
-
-
-
-
-
 
 
     </div>
@@ -292,8 +333,8 @@
     <script src="js/iziToast.min.js"></script>
     <script src="js/iziModal.min.js"></script>
     <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
-
     <script src="js/master.js"></script>
+
   </body>
 
 </html>

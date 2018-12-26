@@ -68,6 +68,21 @@ if ($('.mod').attr('data-page-name') == 'payment') {
   });
 }
 
+if ($('.mod').attr('data-page-name') == 'users') {
+  $("#page").iziModal({
+    title: ' حسابات المستخدمين ',
+    subtitle: ' اضف مستخدم جديد ',
+    // fullscreen: true,
+    openFullscreen: true,
+    headerColor: 'rgb(0,0,10,0.7)',
+    background: 'rgb(30,50,70,0.8)',
+    transitionOutOverlay: 'fadeOut',
+    background: '#34495e',
+    loop: false,
+    radius: 3,
+    borderBottom: true,
+  });
+}
 
 $(document).on('click', '.trigger', function (event) {
   event.preventDefault();
@@ -87,6 +102,11 @@ $(document).on('click', '.trigger', function (event) {
 
   }
   if (this.dataset.modal == 'payment') {
+
+    $('.mod').iziModal('open');
+
+  }
+  if (this.dataset.modal == 'users') {
 
     $('.mod').iziModal('open');
 

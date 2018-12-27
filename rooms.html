@@ -159,19 +159,19 @@
   <div class="add_items">
     <form class="" action="#" method="post" class="text-right">
 
-      <p> <span> رقم الغرفه </span>  <input type="text" name="" value="" placeholder=" رقم الغرفه "> </p>
-      <p> <span> سعر الغرفه </span>  <input type="text" name="" value="" placeholder=" سعر الغرفه "> </p>
-      <p> <span> درجه الغرفه </span>
+      <p> <span title="room ID"> رقم الغرفه </span>  <input type="text" name="" value="" placeholder=" رقم الغرفه "> </p>
+      <p> <span title="room cost"> سعر الغرفه </span>  <input type="text" name="" value="" placeholder=" سعر الغرفه "> </p>
+      <p> <span title="room degree"> درجه الغرفه </span>
         <select class="selection" style="width: 250px;border: 0;;" name="clinics">
-          <option value=""> اختر درجه الغرفه </option>
+          <option title="choose room degree" value=""> اختر درجه الغرفه </option>
           <option value=""> اولى </option>
           <option value=""> ثانيه </option>
         </select>
       </p>
-      <p> <span> وصف الغرفه </span>
+      <p> <span title="room descreption"> وصف الغرفه </span>
        <textarea name="descreption" rows="4" cols="28" placeholder=" الوصف "></textarea>
       </p>
-      <input title="save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
+      <input title="Save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
     </form>
   </div>
 
@@ -185,16 +185,19 @@
     <div class="col-xl-12" >
 
 
+
+
+
       <table class="dr_table mb-3 " dir="rtl" >
         <thead>
           <tr>
             <th>#</th>
-            <th>   رقم الغرفه  </th>
-            <th>  سعر الغرفه </th>
-            <th>  درجه الغرفه  </th>
-            <th> وصف الغرفه  </th>
-            <th> تعديل </th>
-            <th> حذف </th>
+            <th title="room ID">   رقم الغرفه  </th>
+            <th title="room cost">  سعر الغرفه </th>
+            <th title="room degree">  درجه الغرفه  </th>
+            <th title="choose room degree"> وصف الغرفه  </th>
+            <th title="Edit"> تعديل </th>
+            <th title="Delete"> حذف </th>
           </tr>
         </thead>
         <tbody>

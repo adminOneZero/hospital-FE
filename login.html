@@ -8,18 +8,16 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title> تسجيل الدخول </title>
+    <title> الرئيسيه </title>
 
-    <!-- core CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/iziToast.min.css" rel="stylesheet">
-    <link href="css/iziModal.min.css" rel="stylesheet">
+
     <!-- Custom styles for this site -->
     <link href="css/master.css" rel="stylesheet">
+
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cairo|Lateef" rel="stylesheet">
-
-
+<link href="https://fonts.googleapis.com/css?family=Cairo|Lateef" rel="stylesheet">
   </head>
   <body>
 
@@ -35,7 +33,7 @@
         <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item ">
-                  <a class="nav-link nav_links" href="login.html"> تسجيل الدخول <span class="sr-only">(current)</span></a>
+                  <a title="login" class="nav-link nav_links" href="login.html"> تسجيل الدخول <span class="sr-only">(current)</span></a>
                 </li>
               </ul>
         </div>
@@ -44,21 +42,20 @@
   </nav>
 </header>
 
-
 <main role="main" class="section">
 
   <h3 class="section-title text-center p-3"> تسجيل الدخول </h3>
-  <div class="login "  >
-      <form  class="" action="#" method="post" onsubmit="return login_v()">
+  <div class="login">
+      <form class="" action="index.html" method="post">
         <div class="forms-inputs">
-          <p> اسم المستخدم </p>
-          <input  type="text" name="username" value="" placeholder=" اسم المستخدم ">
+          <p title="username"> اسم المستخدم </p>
+          <input title="Enter username" type="text" name="" value="" placeholder=" اسم المستخدم ">
         </div>
         <div class="forms-inputs">
-          <p> كلمه المرور </p>
-          <input type="password" name="password" value="" placeholder=" كلمه المرور ">
+          <p title="password"> كلمه المرور </p>
+          <input title="Enter password" type="password" name="" value="" placeholder=" كلمه المرور ">
         </div>
-        <input type="submit" name="submit" value=" دخول "  class="btn btn-h mt-2 trigger">
+        <input title="Go" type="submit" name="submit" value=" دخول "  class="btn btn-h mt-2">
       </form>
 
   </div>
@@ -70,10 +67,6 @@
 ================================================== -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/iziToast.min.js"></script>
-<script src="js/iziModal.min.js"></script>
-<script src="js/validation.js"></script>
-
 
 </body>
 

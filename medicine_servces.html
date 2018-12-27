@@ -158,19 +158,19 @@
 <div class="mod" data-page-name="medicine_service" id="page"  dir="rtl">
   <div class="add_items">
     <form class="" action="#" method="post" class="text-right">
-      <p><input title="doctor code" type="text" name="" value="" placeholder="  كود الخدمه " style="width:140px;"><span> كود الخدمه </span></p>
-      <p> <span> اسم الخدمه بالعربي </span>  <input type="text" name="" value="" placeholder=" اسم الخدمه بالعربي "> </p>
-      <p> <span> اسم الخدمه بالانجليزيه </span>  <input type="text" name="" value="" placeholder=" اسم الخدمه بالانجليزيه "> </p>
-      <p> <span> مبلغ الخدمه </span>  <input type="text" name="" value="" placeholder=" مبلغ الخدمه "> </p>
-      <p> <span> عيادة خارجيه </span>  <input type="text" name="" value="" placeholder=" عيادة خارجيه "> </p>
-      <p> <span> خاصه بالعيادة </span>
+      <p><input title="Service ID" type="text" name="" value="" placeholder="  كود الخدمه " style="width:140px;"><span title="Service ID"> كود الخدمه </span></p>
+      <p> <span title="Medicine service in English"> اسم الخدمه بالعربي </span>  <input type="text" name="" value="" placeholder=" اسم الخدمه بالعربي " > </p>
+      <p> <span title="Medicine service in Arabic"> اسم الخدمه بالانجليزيه </span>  <input type="text" name="" value="" placeholder=" اسم الخدمه بالانجليزيه "> </p>
+      <p> <span title="Service costing"> مبلغ الخدمه </span>  <input type="text" name="" value="" placeholder=" مبلغ الخدمه "> </p>
+      <p> <span title="External clinic"> عيادة خارجيه </span>  <input type="text" name="" value="" placeholder=" عيادة خارجيه "> </p>
+      <p> <span title="Local clinic"> خاصه بالعيادة </span>
         <select class="selection" style="width: 250px;border: 0;;" name="clinics">
           <option value=""> اختر عياده </option>
           <option value=""> اسنان </option>
           <option value=""> باطنيه </option>
         </select>
       </p>
-      <input title="save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
+      <input title="Save" class="btn btn-f tips" type="submit" name="save" value=" حفظ ">
     </form>
   </div>
 
@@ -188,13 +188,13 @@
         <thead>
           <tr>
             <th>#</th>
-            <th>  كود الخدمه  </th>
-            <th>  اسم الخدمه بالعربي </th>
-            <th>  اسم الخدمه بالانجليزيه  </th>
-            <th>  العيادة  </th>
-            <th>  مبلغ الخدمه </th>
-            <th> تعديل </th>
-            <th> حذف </th>
+            <th title="Service ID">  كود الخدمه  </th>
+            <th title="Service name in English">  اسم الخدمه بالعربي </th>
+            <th title="Service name in Arabic">  اسم الخدمه بالانجليزيه  </th>
+            <th title="clinic">  العيادة  </th>
+            <th title="Service costing">  مبلغ الخدمه </th>
+            <th title="Edit"> تعديل </th>
+            <th title="Delete"> حذف </th>
           </tr>
         </thead>
         <tbody>
@@ -205,8 +205,8 @@
             <td> sleeper </td>
             <td> جراحه </td>
             <td> 1000 </td>
-            <td><a href="#"class="far fa-edit move-rotate"></a></td>
-            <td><a href="#"class="fas fa-trash move-rotate"></a></td>
+            <td title="Edit"><a href="#"class="far fa-edit move-rotate"></a></td>
+            <td title="Delete"><a href="#"class="fas fa-trash move-rotate"></a></td>
           </tr>
           <tr>
             <td>2</td>
